@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Layout } from 'antd';
+import logo from './logo.png';
 import './style.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://origin.co.th"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Origin Property
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/pages/Home/index.js</code> and save to reload.
+          </p>
+          <a
+            href="https://origin.co.th"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Origin Property
+          </a>
+        </header>
+      </div>
+    </Layout>
   );
-}
+};
 
 export default App;
