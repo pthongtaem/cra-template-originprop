@@ -1,13 +1,15 @@
-// Actions
-const CLEAR_AUTH = 'ori-portal/user/CLEAR_AUTH';
+import { UserState, UserActionTypes, CLEAR_AUTH } from './types/user';
 
-const initialState = {
+const initialState: UserState = {
   token: null,
   refreshToken: null,
 };
 
 // Reducer
-export default function reducer(state = initialState, action = {}) {
+export default function reducer(
+  state = initialState,
+  action: UserActionTypes,
+): UserState {
   switch (action.type) {
     case CLEAR_AUTH:
       return {
